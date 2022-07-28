@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./feedback.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- <script src="feedback.js"></script> -->
+	<title>Feedback</title>
+</head>
+<body>
+<header>
+	<nav class="nav">
+		<ul>
+			<li><a href="./index.html"><i class="fa-solid fa-house" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Home</a></li>
+			<li><a href="./travel.html"><i class="fa-solid fa-plane" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Travel</a></li>
+			<li><a href="./schedule.html"><i class="fa-solid fa-calendar-days" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Schedule</a></li>
+			<li><a href="./entertainment.html"><i class="fa-solid fa-tv" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Entertainment</a></li>
+			<li><a class="active" href="./feedback.html"><i class="fa-solid fa-message" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Feedback</a></li>
+			<li><a href="./game.html"><i class="fa-solid fa-gamepad" style="font-size:25px;color:#f0d0b9;"></i>&nbsp Play Game</a></li>
+		</ul>
+	</nav>
+</header>
+<br>
+<br>
+<p class="feedback">Feedback Form</p>
+<p class="feedback-intro">Let us know what you think of the website by filling out this quick form. Thank you. </p>
+
+<div class="containform">
+<form  name = "Form" id = "contact-form" class = "contact-form" action = "#"onsubmit = "mysubmit()">
+	<div id="error_message" class="user-details">
+	<div class="input-box">
+		<span class="details">Full Name</span>
+		<input name="fullName" id="Name" type="text" placeholder="Enter your full name">
+	</div>
+	<br>
+	<div class="input-box">
+		<span class="details">Email</span>
+		<input name="email" id="email" type="Email" placeholder="Enter your email" required>
+	</div>
+	<br>
+	<div class="input-box">
+		<span class="details">Phone Number</span>
+		<input name="phoneNum" id="phone" type="phone" placeholder="Enter your phone number in XXXXXXXXXX format" required>
+	</div>
+	<br>
+	<div class="input-box">
+		<span class="details">Address</span>
+		<input name="address" id ="address" type="address" placeholder="Enter your address" required>
+	</div>
+	<br>
+	<div class="input-box">
+		<span class="details">Comments</span>
+		<input name="comments" id="comment" type="text" placeholder="Let me know how it can be improved" required>
+	</div>
+	<div>
+	<input class="btn" type="submit" id="submit" value="Submit">
+    </div>
+</div>
+</form>
+</div>
+
+
+<footer>A website made from scratch</footer>
+
+<script>
+	function mysubmit() {
+		console.log("hello")
+        var email =
+          document.forms.Form.email.value;
+        var phone =
+          document.forms.Form.phone.value;
+
+        var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+        var regPhone=/^\d{10}$/;;                   // Javascript reGex for Phone Number validation.
+        
+        if (email == "" || !regEmail.test(email)) {
+          window.alert("Please enter a valid e-mail address.");
+          email.focus();
+          return false;
+        }
+        
+        if (phone == "" || !regPhone.test(phone)) {
+          alert("Please enter valid phone number.");
+          phone.focus();
+          return false;
+        }
+
+        else {
+          alert("Feeback submission successfull. Thanks :)");
+          return true;
+        }
+}
+</script>
+	<script src="app.js"></script>
+
+</body>
+</html>

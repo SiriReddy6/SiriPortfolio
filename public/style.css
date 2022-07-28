@@ -1,0 +1,199 @@
+.nav {
+	background-color: #FFF8F4;
+	height: 60px;
+	width: 100%;
+}
+label.logo{
+	color: sienna;
+	font-size: 45px;
+	line-height: 60px;
+	padding: 0 100px;
+	font-weight: bold;
+	float: right;
+}
+nav ul{
+	float: left;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 45px;
+	margin:0px 10px 0px 5px;
+}
+nav ul li a{
+	color: black;
+	font-size: 25px;
+	padding: 7px 13px;
+	border-radius: 4px;
+	font-family: papyrus;
+	text-decoration: none;
+}
+a.active,a:hover{
+	background: #F8E5D7;
+	transform: .5s;
+}
+
+
+body {
+	background-color: #FFF8F4;
+	align-items: center;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+h1 {
+	text-align: center;
+	font-family: "Brush Script MT","Apple Chancery";
+	font-size: 55px;
+	color: #51361A;
+	position: relative;
+	left: 7rem;
+	top: 12rem;
+}
+.mypic {
+	position: relative;
+	right: 14rem;
+	top: -4rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+h2{
+	background-color:sienna;
+	text-align: center;
+	color: white;
+	margin: auto;
+    width: 50%;
+    padding: 1px;
+    font-family: "Bradley Hand";
+}
+p{
+	text-align: center;
+	font-size: 20px;
+}
+strong{
+	font-size: 30px;
+}
+blockquote{
+	font-size: 28px;
+	text-align: center;
+	font-style: italic;
+}
+.roy{
+	font-size: 22px;
+	text-align: center;
+	font-style: bold;
+	font-weight: bolder;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fefefa;
+	overflow: auto;
+}
+.gallery{
+	 margin: 5px;
+	 border: ipx solid cornsilk;
+	 height: 350px;
+	 float: left;
+	 width: 390px;
+}
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+figcaption{
+	text-align: center;
+	font-family: papyrus, "Times New Roman";
+	color: black;
+	text-decoration: none;
+}
+
+footer{
+	background-color:cornsilk;
+	text-align: center;
+	color: black;
+	margin: auto;
+    width: 40%;
+    padding: 0px;
+    font-family: "Bradley Hand";
+    float: right;
+}
+
+audio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+audio::-webkit-media-controls-panel{
+	background-color: #F8E5D7;
+}
+
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.auvuheading{
+	font-size: 20px;
+	font-family: "Courier New",BrowalliaUPC;
+	text-align: center;
+	color: #866211;
+}
+
+/* CSS for 'Play Game' */
+canvas {
+	background-color: #FFF8F4;
+	width: 90%;
+	height: 90%;
+	border-radius: 50px;
+	
+}
+
+.gamebtn {
+	background: #F8E5D7;
+	color: black;
+	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bolder;
+	padding: 16px 30px;
+	border: black;
+	cursor: pointer;
+	border-radius: 30px;
+	text-align: center;
+	margin: 2% ;
+}
+
+.gameIntro{
+	font-family:optima;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 0rem;
+	left: 0rem;
+}
+
+.gamebtn:hover {
+		background-color: rgb(207, 184, 157);
+		color: rgb(0, 0, 0);
+		width: 20%;
+}
+.gameplay {
+	width: 50%;
+	background: #222b22;
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+	color: white;
+	font-family: 'Century Gothic', sans-serif;
+}

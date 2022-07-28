@@ -1,0 +1,48 @@
+.schedule{
+border-collapse: collapse;
+width: 95%;
+margin: auto;
+background-color: white;
+border-radius: 10px;
+}
+h3{
+	font-family: chalkduster;
+	text-align: center;
+	font-size: 30px;
+	color: #687144;
+
+}
+.weekend{
+	font-size: 20px;
+	padding: 40px;
+	width: 30%;
+	text-align: center;
+	background-color: #D6E0CE;
+}
+.schedule td{
+	border-spacing: 25px;
+	padding: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.schedule span{
+	font-family: luminari;
+	font-size: 20px;
+	color: #7F5A16;
+}
+.schedule thead tr td{
+	background-color: #587B5D;
+	text-align: center;
+	font-family:cursive;
+	font-size: 35px;
+	color: white;
+}
+.time{
+	color: #27394F;
+	width: 10%;
+	font-family: cursive;
+	font-size: 20px;
+	vertical-align: top;
+	background-color: #F5F6E2;
+}
