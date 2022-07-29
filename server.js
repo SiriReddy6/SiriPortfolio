@@ -45,7 +45,7 @@ app.post('/', (req,res) => {
             
             from: 'Siri Chandana Karukonda <sirikarukonda6@gmail.com>', // sender address
             to: req.body.email, // list of receivers
-            subject: 'Form Submission', // Subject line
+            subject: 'Feedback submission Successfull', // Subject line
             text: `Hello ${req.body.name}, \n   Thank you for your feedback! \n   you're my ${result} th honoured guest who left their feedback. \n-From Siri`, // plain text body
         };
         console.log("hello")
